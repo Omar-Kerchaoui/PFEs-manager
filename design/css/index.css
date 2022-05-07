@@ -1,0 +1,311 @@
+/* start global rules  */
+
+.main {
+  min-height: 100vh;
+  background: #e9edf4;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  padding: 30px 0;
+  color: #1f2937;
+  font-size: 55px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.overlay {
+  content: "";
+  background-color: #000;
+  display: block;
+  opacity: 0.3;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.row .col-md-7 {
+  position: relative;
+}
+
+.asterik {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #c62828;
+}
+
+table thead th {
+  color: #007bff;
+  background-color: #fff;
+}
+
+table tbody {
+  background-color: #f5f6fa;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-color: #e3e3e3;
+}
+
+/* end global rules  */
+
+/* start bootstrap edit */
+@media (max-width: 576px) {
+  .card {
+    width: 20rem !important;
+  }
+}
+
+.text-primary {
+  color: #007bff;
+}
+/* end bootstrap edit */
+
+/* start index page  */
+.hover {
+  transition: all 0.5s;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 7px;
+  color: #007bff;
+  border: none;
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.card-title {
+  color: #1f2937;
+}
+
+.card-text {
+  color: #1f2937;
+}
+
+.hover:hover {
+  transform: scale(1.03) translate(0, -10px);
+}
+
+img {
+  height: 265.65px;
+}
+
+/* end index page  */
+
+/* start login.admin  */
+.gradient {
+  background-color: #dcdde1;
+  min-height: 100vh;
+  display: flex;
+  padding: 200px 0;
+  justify-content: center;
+  color: #007bff;
+  position: relative;
+}
+
+.login_admin {
+  width: 30%;
+  min-height: 400px;
+  margin: auto;
+  background-color: #f1f1f1;
+  padding: 20px 25px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 99;
+}
+
+/* start media queries of admin page login  */
+@media (max-width: 576px) {
+  .login_admin {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+  .login_admin {
+    width: 70%;
+  }
+}
+
+/* end login.admin  */
+
+/* start dashboard */
+.navbar {
+  background-color: #007bff;
+  z-index: 999;
+  color: #e7e7e7;
+}
+
+.navbar .btn {
+  color: #007bff;
+  background-color: #fff !important;
+}
+
+.home-stats {
+  background-color: #e9edf4;
+  min-height: 100vh;
+}
+
+.home-stats .stat {
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-stats .stat i {
+  /* position: absolute; */
+  /* top: 23px; */
+  font-size: 80px;
+  /* left: 30px; */
+  color: #f7f7f7;
+}
+
+/* .home-stats .stat .info {
+  float: right;
+} */
+
+.home-stats .stat a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-stats .st-members {
+  background-color: #227093;
+}
+.home-stats .st-pending {
+  background-color: #218c74;
+}
+.home-stats .st-items {
+  background-color: #474787;
+}
+.home-stats .st-comments {
+  background-color: #e66767;
+}
+
+.home-stats .stat span {
+  display: block;
+  font-size: 50px;
+}
+
+.panel {
+  margin-top: 30px;
+}
+
+.panel-heading {
+  background-color: #fafafa;
+  color: #333;
+  padding: 15px;
+}
+
+.panel-heading .toggle-info {
+  cursor: pointer;
+}
+
+.panel-heading .toggle-info:hover {
+  color: #444;
+}
+
+.panel-body {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.latest .panel .latest-users {
+  margin-bottom: 0;
+}
+
+.latest .panel .latest-users li {
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.latest .panel .latest-users li:nth-child(odd) {
+  background-color: #eee;
+}
+
+.latest .panel .latest-users li span {
+  padding: 1px 10px;
+}
+
+.latest .panel .latest-users li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.accept-btn {
+  margin-right: 5px;
+}
+
+/* start media queries  */
+@media (min-width: 992px) {
+  .home-stats .stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-stats .stat {
+    gap: 150px;
+  }
+  .home-stats .row {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-stats .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-stats .latest .row {
+    gap: 0;
+  }
+}
+
+/* end dashboard */
+
+/* start stage page  */
+.stage-table {
+  z-index: 99;
+}
+/* end stage page  */
+
+table.active {
+  display: table;
+}
+table.not-active {
+  display: none;
+}
+
+table {
+  min-width: 920px;
+  margin-bottom: 0;
+}
+
+.wrap {
+  width: 100%;
+  overflow: auto;
+}
